@@ -1,0 +1,440 @@
+/*
+Theme name: ExchangeRate
+ */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    background-color: #4A4A4A;
+    color: #ffffff;
+    font-family: Verdana, Geneva, sans-serif;
+    padding: 0;
+    min-width: 600px;
+}
+
+
+
+header {
+    background-color: #252323;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+font {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/*.logo{*/
+/*    height: 40px;*/
+/*    color: white;*/
+/*}*/
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.phone {
+    /*display: flex;*/
+    align-items: center;
+    /*margin-right: 20px;*/
+}
+
+.phone img {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.social-media a {
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+.currency-rates {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 0px;
+    /*text-align: center;*/
+    justify-content: space-between;
+}
+
+.main-text {
+    text-transform: capitalize;
+    justify-content: space-between;
+    column-count: 2;
+    color: #252323;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center !important;
+}
+
+
+.left-heading {
+    justify-self: start;
+}
+
+.center-heading {
+    justify-self: center;
+    margin-right: -50px;
+}
+
+.right-heading {
+    justify-self: end;
+}
+
+
+
+.currency {
+    background-color: #252323;
+    flex-basis: 0;
+    flex-grow: 1;
+    margin-bottom: 1px;
+    padding: 20px;
+    font-size: 26px;
+    justify-content: space-between;
+    border-radius: 4px;
+
+}
+
+.currency:hover {
+    opacity: 0.6;
+}
+
+.currency-info {
+    /*justify-content: space-between;*/
+    /*display: flex;*/
+    padding: 10px 0px;
+    column-count: 2;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.currency-name {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 23px;
+}
+
+.currency-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.currency-buy {
+    color: #00ff00;
+    margin-left: -24px;
+    display: block;
+}
+
+.currency-sell {
+    color: #ff0000;
+}
+
+.exchange-info {
+    background-color: #252323;
+    text-align: center;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+table {
+    width: 100%;
+}
+
+table td {
+    padding: 20px;
+    vertical-align: top;
+}
+
+.contact-details {
+    text-align: left;
+}
+.additional-info {
+    text-align: right;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+.social-media a i {
+    margin-right: 5px;
+}
+
+.fa-map-marker-alt,
+.fa-subway,
+.fa-phone,
+.fa-clock,
+.fa-coins,
+.fa-money-bill-wave {
+    margin-right: 5px;
+}
+
+
+.about{
+    background-color: #252323;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 40px 40px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+footer{
+    background-color: #252323;
+    text-align: center;
+    padding: 1px;
+    border-radius: 4px;
+}
+a{
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 320px) {
+    body {
+        min-width: 400px;
+    }
+
+}
+
+
+@media only screen and (max-width: 500px) {
+    body {
+        zoom: 0.60;
+    }
+
+}
+
+@media only screen and (max-width: 570px) {
+    body {
+        min-width: 380px;
+    }
+
+}
+
+
+.city-selection{
+    background-color: #252323;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.buy {
+    width: auto;
+}
+
+.currency-flag{
+    width: 20px;
+    height: 14px;
+    background-size: cover;
+    margin-right: 5px;
+}
+
+.currency-flag-usd {
+    background-image: url('https://wise.com/public-resources/assets/flags/rectangle/usd.png');
+    background-size: cover;
+}
+
+
+.currency-flag-pln{
+
+    margin-left: 20px;
+    background-image: url('https://wise.com/public-resources/assets/flags/rectangle/pln.png');
+    background-size: cover;
+}
+
+.currency-flag-uah{
+
+
+    background-image: url('https://wise.com/public-resources/assets/flags/rectangle/uah.png');
+    background-size: cover;
+}
+
+.currency-flag-eur {
+    /* задайте нужную ширину флага */
+    /* задайте нужную высоту флага */
+    background-image: url('https://wise.com/public-resources/assets/flags/rectangle/eur.png');
+    background-size: cover;
+}
+
+.currency-flag-try {
+    /* задайте нужную ширину флага */
+    /* задайте нужную высоту флага */
+    background-image: url('https://wise.com/public-resources/assets/flags/rectangle/try.png');
+    background-size: cover;
+}
+
+.currency-flag-chf {
+    /* задайте нужную ширину флага */
+    /* задайте нужную высоту флага */
+    background-image: url('https://wise.com/public-resources/assets/flags/rectangle/chf.png');
+    background-size: cover;
+}
+
+.currency-flag-ils {
+    /* задайте нужную ширину флага */
+    /* задайте нужную высоту флага */
+    background-image: url('https://wise.com/public-resources/assets/flags/rectangle/ils.png');
+    background-size: cover;
+}
+
+.currency-flag-gbp {
+    /* задайте нужную ширину флага */
+    /* задайте нужную высоту флага */
+    background-image: url('https://wise.com/public-resources/assets/flags/rectangle/gbp.png');
+    background-size: cover;
+}
+
+.currency-flag-aud {
+    /* задайте нужную ширину флага */
+    /* задайте нужную высоту флага */
+    background-image: url('https://wise.com/public-resources/assets/flags/rectangle/aud.png');
+    background-size: cover;
+}
+
+.currency-flag-cad {
+    /* задайте нужную ширину флага */
+    /* задайте нужную высоту флага */
+    background-image: url('https://wise.com/public-resources/assets/flags/rectangle/cad.png');
+    background-size: cover;
+}
+
+.currency-flag-byn {
+    /* задайте нужную ширину флага */
+    /* задайте нужную высоту флага */
+    background-image: url('https://wise.com/public-resources/assets/flags/rectangle/byn.png');
+    background-size: cover;
+}
+
+.currency-flag-gel {
+    /* задайте нужную ширину флага */
+    /* задайте нужную высоту флага */
+    background-image: url('https://wise.com/public-resources/assets/flags/rectangle/gel.png');
+    background-size: cover;
+}
+
+.currency-flag-czk {
+    /* задайте нужную ширину флага */
+    /* задайте нужную высоту флага */
+    background-image: url('https://wise.com/public-resources/assets/flags/rectangle/czk.png');
+    background-size: cover;
+}
+
+.currency-flag-sek {
+    /* задайте нужную ширину флага */
+    /* задайте нужную высоту флага */
+    background-image: url('https://wise.com/public-resources/assets/flags/rectangle/sek.png');
+    background-size: cover;
+}
+
+.currency-flag-dkk {
+    /* задайте нужную ширину флага */
+    /* задайте нужную высоту флага */
+    background-image: url('https://wise.com/public-resources/assets/flags/rectangle/dkk.png');
+    background-size: cover;
+}
+
+.currency-flag-huf {
+    /* задайте нужную ширину флага */
+    /* задайте нужную высоту флага */
+    background-image: url('https://wise.com/public-resources/assets/flags/rectangle/huf.png');
+    background-size: cover;
+}
+
+.currency-flag-mdl {
+    /* задайте нужную ширину флага */
+    /* задайте нужную высоту флага */
+    background-image: url('https://wise.com/public-resources/assets/flags/rectangle/mdl.png');
+    background-size: cover;
+}
+
+.currency-flag-nok {
+    /* задайте нужную ширину флага */
+    /* задайте нужную высоту флага */
+    background-image: url('https://wise.com/public-resources/assets/flags/rectangle/nok.png');
+    background-size: cover;
+}
+
+.gt_white_content{
+    background-color: #333333 !important;
+}
+
+.gt_languages a[data-gt-lang="en"] {
+    order: 1 !important;
+}
+
+.gt_languages a[data-gt-lang="pl"] {
+    order: 2 !important;
+}
+
+.gt_languages a[data-gt-lang="uk"] {
+    order: 3 !important;
+}
+
+.gt_languages a[data-gt-lang="ru"] {
+    order: 4 !important;
+}
+
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf-ti6hGc{
+    display: none !important;
+}
+
+.show-more-button {
+    background-color: #252323;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: auto;
+    display: flex;
+}
+
+a.glink img {
+    display: none !important;
+}
+
+.gt_white_content a{
+    padding: 19px 0 !important;
+}
+
+#wpadminbar {
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+    z-index: 9999 !important;
+}
